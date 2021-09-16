@@ -15,12 +15,14 @@ class Button extends StatelessWidget {
     this.color = DEFAULT,
     required this.cb,
   });
+  // ignore: non_constant_identifier_names
   Button.Big({
     required this.text,
     this.big = true,
     this.color = DEFAULT,
     required this.cb,
   });
+  // ignore: non_constant_identifier_names
   Button.Operation({
     required this.text,
     this.big = false,
@@ -32,14 +34,17 @@ class Button extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       flex: big ? 2 : 1,
+      // ignore: deprecated_member_use
       child: RaisedButton(
         color: this.color,
         child: Text(
           text,
           style: TextStyle(
             color: Colors.white,
+            fontStyle: FontStyle.normal,
+            fontWeight: FontWeight.w500,
             fontSize: 32,
-            fontWeight: FontWeight.w200,
+            //fontWeight: FontWeight.w200,
           ),
         ),
         onPressed: () => cb(text),

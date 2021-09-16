@@ -46,7 +46,7 @@ class Keyboard extends StatelessWidget {
               cb: this.cb,
             ),
             Button.Operation(
-              text: 'X',
+              text: 'x',
               cb: this.cb,
             ),
           ]),
@@ -101,7 +101,7 @@ class Keyboard extends StatelessWidget {
               cb: this.cb,
             ),
             Button(
-              text: ',',
+              text: '.',
               cb: this.cb,
             ),
             Button.Operation(

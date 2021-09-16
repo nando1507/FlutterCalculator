@@ -16,7 +16,7 @@ class _CalculatorState extends State<Calculator> {
     setState(() {
       memory.applyCommand(text);
     });
-    print(text);
+    // print(text);
   }
 
   @override
